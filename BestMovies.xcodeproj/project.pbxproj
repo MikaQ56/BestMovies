@@ -12,6 +12,8 @@
 		CA08661A21480FDE0037F784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA08661821480FDE0037F784 /* Main.storyboard */; };
 		CA08661C21480FE00037F784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA08661B21480FE00037F784 /* Assets.xcassets */; };
 		CA08661F21480FE00037F784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA08661D21480FE00037F784 /* LaunchScreen.storyboard */; };
+		CA08662B214810680037F784 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA08662A214810680037F784 /* Movie.swift */; };
+		CA08662F2148452D0037F784 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA08662E2148452D0037F784 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		CA08661B21480FE00037F784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA08661E21480FE00037F784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA08662021480FE00037F784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA08662A214810680037F784 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		CA08662E2148452D0037F784 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		CA08661321480FDE0037F784 /* BestMovies */ = {
 			isa = PBXGroup;
 			children = (
-				CA08661421480FDE0037F784 /* AppDelegate.swift */,
-				CA08661621480FDE0037F784 /* ViewController.swift */,
-				CA08661821480FDE0037F784 /* Main.storyboard */,
-				CA08661B21480FE00037F784 /* Assets.xcassets */,
-				CA08661D21480FE00037F784 /* LaunchScreen.storyboard */,
-				CA08662021480FE00037F784 /* Info.plist */,
+				CA086629214810170037F784 /* SupportingFiles */,
+				CA086628214810030037F784 /* Controller */,
+				CA08662721480FF90037F784 /* View */,
+				CA08662621480FF00037F784 /* Model */,
 			);
 			path = BestMovies;
+			sourceTree = "<group>";
+		};
+		CA08662621480FF00037F784 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA08662A214810680037F784 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA08662721480FF90037F784 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA08661D21480FE00037F784 /* LaunchScreen.storyboard */,
+				CA08661821480FDE0037F784 /* Main.storyboard */,
+				CA08662E2148452D0037F784 /* MovieTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA086628214810030037F784 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CA08661621480FDE0037F784 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CA086629214810170037F784 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CA08661B21480FE00037F784 /* Assets.xcassets */,
+				CA08662021480FE00037F784 /* Info.plist */,
+				CA08661421480FDE0037F784 /* AppDelegate.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +175,8 @@
 			files = (
 				CA08661721480FDE0037F784 /* ViewController.swift in Sources */,
 				CA08661521480FDE0037F784 /* AppDelegate.swift in Sources */,
+				CA08662F2148452D0037F784 /* MovieTableViewCell.swift in Sources */,
+				CA08662B214810680037F784 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y2HQCVS784;
-				INFOPLIST_FILE = BestMovies/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BestMovies/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y2HQCVS784;
-				INFOPLIST_FILE = BestMovies/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BestMovies/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
